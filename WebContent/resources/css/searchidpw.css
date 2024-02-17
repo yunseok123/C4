@@ -1,0 +1,74 @@
+/* styles.css */
+.container {
+  
+  padding: 40px;
+  width: 300px; /* Adjust width as necessary */
+  margin: auto;
+  background-color: white;
+  border: 1px solid;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.header-button.active {
+  background-color: #0056b3; /* A darker shade to indicate the button is active/selected */
+}
+
+.header-button:hover {
+  background-color: #0056b3;
+}
+
+.form-section {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+.form-section {
+  display: none; /* By default, the forms are not displayed */
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+h3{
+	text-align: center;
+}

@@ -1,0 +1,406 @@
+@charset "UTF-8";
+form{
+	margin-left:10px;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+  list-style-type: none; /* 이를 통해 li 요소의 마커(점)를 제거합니다. */
+}
+.market-order-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    background-color: white;
+}
+
+.item_photo_info_sec {
+    display: flex;
+}
+
+.item_photo_view_box {
+    width: 50%;
+}
+
+.item_info_box {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.item_detail_tit h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    width: 500px;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+form#frmView {
+    margin-left: 100px;
+}
+
+.item_detail_list dl {
+    margin-bottom: 10px;
+}
+
+.item_detail_list dt {
+    color: #666;
+    float: left;
+    width: 100px;
+}
+
+.item_detail_list dd {
+    margin-left: 100px;
+    color: #333;
+}
+
+.btn_add_wish, .btn_add_cart, .btn_add_order {
+    background-color: #1f1f1f;
+    font-weight:bold;
+    font-size: 15px;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: auto;
+}
+
+.btn_add_wish:hover, .btn_add_cart:hover, .btn_add_order:hover {
+    background-color: white;
+    font-weight:bold;
+    color:black;
+    border:3px solid black;
+   
+}
+
+.item_price_cont {
+    margin-top: 30px;
+}
+
+.total_amount {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e44d26;
+}
+.btn_choice_box1{
+	display: flex;
+	gap:15px;
+}
+.custom-select-wrapper .custom-options {
+  max-height: 200px; /* 최대 높이를 설정하여 이를 넘어가면 스크롤이 생깁니다. */
+  overflow-y: auto; /* 세로 스크롤바를 활성화합니다. */
+  display: none; /* 기본적으로 숨겨집니다. */
+}
+img.middle {
+    box-shadow: salmon;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ddd;
+}
+
+.js-deliveryMethodVisitArea.dn {
+    width: 300px;
+    
+}
+
+
+.tab-container {
+    width: 100%;
+    max-width: 1200px; /* .market-order-container의 max-width와 동일하게 설정 */
+    margin: 0 auto; /* 좌우 마진을 auto로 설정하여 중앙에 배치 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* .market-order-container의 스타일을 맞춤 */
+    background-color: white; /* 배경색 설정 */
+    padding: 20px; /* 안쪽 여백 설정 */
+}
+
+.tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabs li {
+    background: none;
+    color: #808080; /* 비활성 탭의 글씨 색상을 회색으로 설정 */
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.tabs li.current {
+    color: black; /* 활성 탭의 글씨 색상을 검은색으로 설정 */
+    border-bottom: 3px solid black;
+}
+
+.tab-content {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+    line-height: 1.6rem;
+}
+
+.tab-content.current {
+    display: block;
+}
+
+img#detail-info {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+/*qna쪽----------------------------------------------------------------------------------------*/
+
+/* Q&A 섹션 스타일링 */
+.qna_cont {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fff;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1200px; /* 탭 컨테이너와 동일한 최대 너비 */
+    margin: 20px auto; /* 중앙 정렬 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 그림자 효과 */
+}
+
+.board_tit {
+    font-size: 20px;
+    color: #333;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.qna_table_type {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.qna_table_type thead th {
+    background-color: #f9f9f9;
+    color: #666;
+    font-weight: normal;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.qna_table_type tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.qna_table_type tbody tr.js_data_row:hover {
+    background-color: #f9f9f9;
+}
+
+.qna_table_type tbody td.board_tit {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.qna_table_type tbody td.board_tit img {
+    margin-right: 5px;
+}
+
+.pagination {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pagination ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.pagination ul li {
+    display: inline;
+    margin: 0 5px;
+}
+.pagination ul li.on span,
+.pagination ul li a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.pagination ul li.on span,
+.pagination ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.btn_qna_box {
+    text-align: right;
+    padding: 20px 0;
+}
+
+.btn_qna_write, .btn_qna_more {
+	border:1px solid #007bff;
+    background-color: white;
+    color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn_qna_write:hover, .btn_qna_more:hover {
+	color:white;
+    background-color: #0056b3;
+}
+a.js_btn_view{
+	text-decoration: none;
+}
+strong.product-qna {
+    color: black;
+}
+
+
+/*문의 내용----------------------------------------------------------------------------*/
+
+/* 문의 폼 스타일링 */
+/* 모달 창 전체 스타일 */
+.modal {
+  display: none; /* Initially hidden */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* 모달 컨텐츠 스타일 */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+
+
+
+/* 폼 요소 스타일링 */
+#productInquiryForm {
+  display: flex;
+  flex-direction: column; /* Stack form items vertically */
+}
+
+#productInquiryForm label {
+  margin-top: 10px;
+}
+
+#productInquiryForm select,
+#productInquiryForm input[type="text"],
+#productInquiryForm textarea {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px; /* Space between form items */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#productInquiryForm textarea {
+  height: 100px; /* Fixed height for textarea */
+}
+
+#productInquiryForm input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#productInquiryForm input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+
+        
+        /*셀디자인------------------------*/
+        
+        /* 날짜 셀 스타일 */
+.date-cell {
+  text-align: right; /* 내용을 오른쪽으로 정렬 */
+  color: #757575; /* 글자색 */
+}
+
+/* 질문 제목 셀 스타일 */
+.question-title {
+  cursor: pointer; /* 마우스 오버시 커서 변경 */
+  color: #0056b3; /* 클릭 가능한 텍스트 색상 */
+}
+table thead th {
+  background-color: #f8f8f8; /* 헤더 배경색 */
+  font-weight: bold;
+  text-align: center;
+  padding: 10px; /* 헤더 내부 여백 */
+  border-bottom: 2px solid #e8e8e8; /* 하단 테두리 */
+}
+table{
+	width: 100%;
+	text-align: center;
+}
+/* 테이블 바디 스타일 */
+table tbody td {
+  padding: 10px; /* 셀 내부 여백 */
+  border-bottom: 1px solid #e8e8e8; /* 하단 테두리 */
+  
+}
+
+/* 테이블 로우 호버 스타일 */
+table tbody tr:hover {
+  background-color: #f4f4f4; /* 호버시 배경색 변경 */
+  cursor: pointer;
+}
+
+
+a.btn_write {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-decoration:none;
+    float: right; /* 버튼을 오른쪽에 위치시킵니다. */
+    margin-right: 10px; /* 오른쪽 여백을 조정합니다. */
+    margin-bottom: 20px;
+}
+
+a.btn_write:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+.status-complete {
+    background-color: green;
+    color:white;
+}

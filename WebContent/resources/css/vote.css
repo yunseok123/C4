@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f3f3f3;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.login-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background-color: rgb(72, 108, 235);
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr {
+    margin-top: 20px;
+}
+
+.team-logos {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 150px;
+}
+
+.team-logos img {
+    width: 150px; /* 로고의 크기를 증가시킴 */
+    height: auto;
+}
+
+/* 투표하기 버튼 스타일 */
+.vote-button {
+    display: block;
+    width: 150px; /* 버튼의 너비를 증가시킴 */
+    height: 50px; /* 버튼의 높이를 증가시킴 */
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #D9D9D9; /* 버튼의 배경색 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* 버튼의 글꼴 크기를 증가시킴 */
+    font-weight: bold;
+}
+
+/* 댓글 컨테이너 스타일 */
+.comments-container {
+    max-width: 768px; /* 컨테이너의 최대 너비를 줄임 */
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* 댓글 작성 폼 스타일 */
+.comment-form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.comment-form textarea {
+    flex: 1;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.comment-form button {
+    padding: 10px 20px;
+    background-color: #3A4C8C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* 댓글 목록 스타일 */
+.comments-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-list .comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.comments-list .comment span {
+    margin: 0 10px;
+}
+
+.comment-name {
+    flex-basis: 20%;
+}
+
+.comment-content {
+    flex-grow: 2;
+    text-align: left;
+}
+
+.comment-date {
+    flex-basis: 20%;
+}
+
+/* 페이지 네이션 스타일 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}

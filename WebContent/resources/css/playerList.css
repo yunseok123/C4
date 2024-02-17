@@ -1,0 +1,247 @@
+	@charset "UTF-8";
+
+	body {
+		font-family: 'Arial', sans-serif;
+		background: #f4f4f4;
+		margin: 0;
+		padding: 0;
+	}
+
+	.stats-container {
+		text-align: center;
+		margin-top: 20px;
+		/* flexbox를 사용하여 요소들 사이의 간격을 균일하게 분배합니다. */
+		display: flex;
+		margin: 100px;
+		flex-wrap: wrap;
+	}
+
+	.stat {
+		margin: 15px;
+		padding: 20px;
+		background: #486CEA;
+		color: white;
+		border-radius: 50%;
+		width: 210px;
+		height: 210px;
+		line-height: 100px;
+		vertical-align: middle;
+		min-width: 120px;
+		font-size: 35px;
+	}
+
+	@media (max-width: 768px) {
+		.stat {
+			font-size: 14px;
+			/* 화면이 좁아질 때 글자 크기를 줄입니다 */
+		}
+	}
+
+	@media (max-width: 480px) {
+		.stat {
+			font-size: 12px;
+			/* 화면이 더욱 좁아질 때 글자 크기를 더 줄입니다 */
+		}
+	}
+
+	@media (max-width: 600px) {
+		.stat {
+			margin: 10px;
+			width: 80px;
+			height: 80px;
+			line-height: 80px;
+		}
+	}
+
+	.subtitle {
+		padding: 20px;
+		margin: 30px 100px;
+		width: 190px;
+		height: auto;
+		text-align: center;
+		background-color: #486CEA;
+		color: white;
+		padding: 10px 15px;
+		font-size: 35px;
+		margin-bottom: 30px;
+		border-radius: 30px
+	}
+
+	/* 선수단 구성 제목을 더 작게 만들고, 위치를 조정합니다 */
+	.roster-title {
+
+		color: #333;
+		/* 글씨 색상 */
+		padding: 10px 0;
+		text-align: left;
+		margin: 0 0 20px 100px;
+		/* 위치 조정 */
+	}
+
+	strong {
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.team-intro-container {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		padding: 20px;
+		margin-bottom: 100px;
+
+	}
+
+	.team-logo {
+		flex: 0 0 auto;
+		/* 로고의 크기가 변하지 않도록 설정합니다. */
+		padding-right: 20px;
+		/* 로고와 설명 사이의 간격을 위한 패딩 */
+	}
+
+	.team-logo img {
+		margin-left: 60px;
+		width: 300px;
+		/* 로고 이미지의 크기를 설정합니다. 실제 이미지 크기에 맞게 조정하세요. */
+		height: auto;
+	}
+
+	.team-description {
+		width: 900px;
+		height: auto;
+		padding: 10px;
+		background-color: white;
+		margin-left: 30px;
+	}
+
+	#sidebar ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	#sidebar li {
+		
+		padding: 10px;
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+
+	#sidebar li::after {
+
+		position: absolute;
+		/* 부모 요소인 li에 대해 절대 위치 */
+
+		bottom: -10px;
+		/* li의 하단보다 10px 더 내려갑니다 */
+		right: 0;
+		/* li의 오른쪽에 붙습니다 */
+
+		width: 0;
+		/* 가상 요소의 너비는 0이어도 됩니다 */
+	}
+
+	#sidebar {
+		width: 200px;
+		height: auto;
+		border-right: 2px solid #111;
+		position: absolute;
+		left: 0;
+		background-color: #f4f4f4;
+		padding: 20px;
+		/* height: 100%; */
+		overflow-y: auto;
+		z-index: 1000;
+	}
+
+	.roster-container {
+		margin-left: 240px;
+		/* 사이드바의 너비에 맞춰 메인 컨텐츠의 왼쪽 여백을 조정 */
+	}
+
+	/* #roster 영역을 그리드 레이아웃으로 설정 */
+	#roster {
+		margin-left: 240px;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+		/* 그리드 아이템의 최소 너비를 120px로 설정 */
+		grid-gap: 20px;
+		/* 그리드 아이템 간의 간격 */
+		padding: 20px;
+	}
+#player-list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7개의 동등한 열 생성 */
+ justify-content: flex-start;
+  gap: 20px; /* 카드 사이의 간격 */ 
+ padding-left: 20px; /* 추가 패딩 */
+  
+}
+
+.player-card {
+  display: flex; /* Flexbox를 사용하여 내용을 세로 방향으로 정렬 */
+   flex-direction: column; /* 항목을 세로로 정렬 */
+  align-items: center; /* 가운데 정렬 */
+  text-align: center; /* 텍스트를 중앙에 정렬 */
+}
+.player-card .player-image img {
+  width: auto; /* 이미지의 원래 비율을 유지 */
+  max-width: 100%; /* 컨테이너 너비를 초과하지 않도록 함 */
+  height: auto; /* 높이를 자동으로 조절하여 비율 유지 */
+}
+.player-card .player-info {
+  text-align: center;
+}
+
+.player-card .player-image img {
+  width: 55%; /* 이미지가 카드의 너비에 맞게 조정되도록 설정 */
+  height: auto; /* 이미지의 비율을 유지하면서 높이 조정 */
+  max-height: 200px; /* 이미지의 최대 높이를 설정, 필요에 따라 조정 */
+}
+
+
+/* 작은 화면에 대한 레이아웃을 조절하는 미디어 쿼리 */
+@media screen and (max-width: 768px) {
+  .player-card {
+    width: calc(50% - 10px); /* 작은 화면에서는 50% 너비로 변경합니다 */
+  }
+}
+
+
+
+	#sidebar li:hover {
+		background-color: #e9e9e9;
+		/* Light grey background on hover */
+		cursor: pointer;
+		/* Changes the cursor to indicate the item is clickable */
+		/* You can add more styling properties as needed */
+	}
+
+	.select {
+		text-align: center;
+		margin: 20px 0;
+	}
+
+	.select a {
+		margin: 0 15px;
+		text-decoration: none;
+		font-size: 1.2em;
+		color: #000;
+		/* You can change this color */
+	}
+
+.select a:hover,
+.select a:active {
+    color: #000; /* 호버 및 클릭 시 글자색 변경 */
+    background-color: transparent; /* 배경색 유지 */
+    text-decoration: underline; /* 호버 및 클릭 시 밑줄 표시 */
+}
+
+
+
+	#sidebar li.active {
+		background-color: #e9e9e9;
+		/* 선택된 항목의 배경색 */
+		cursor: default;
+		/* 선택된 항목은 호버 효과를 무력화합니다 */
+	}

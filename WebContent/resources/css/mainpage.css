@@ -1,0 +1,654 @@
+
+body{
+    max-width: 1920px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+}
+.topbtn{
+    width: 100%;
+    height: 100%;
+}
+.topbtn p{
+    position: fixed;
+    padding-top: 12px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 1002;
+    color: white;
+    text-align: center;
+    left: 95%;
+    top: 90%;
+}
+
+
+#all{
+    position: fixed;
+    width: 300px;
+    background-color: #343434;
+    z-index: 1000;
+    left: -300px;
+}
+
+.menuhover{
+    width: 50px;
+    height: 50px;
+}
+.menu-icon:hover #all{
+    left:-10px;
+    top: 0;
+    transition: 0.2s;
+}
+.top{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+.menu{
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url('./images/menu-icon.png');
+    margin-top: 32px;
+    margin-left: 50px;
+
+} 
+.interpark{
+    width: 160PX;
+    height: 62PX;
+    background: url(./images/濡쒓퀬\ copy\ 2.png);
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.menu-icon:visited #all{
+    opacity: 1;
+}
+
+.container .ul{
+    padding: 0;
+    margin: 0;
+}
+
+.container .ul li{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.container .ul li a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.container .ul li a:hover{
+    display: block;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.ul2div{
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.ul2{
+    padding: 0;
+}
+.ul2 li{
+    
+    border-right: solid 1px white;
+    display: inline-block;
+    list-style: none;
+}
+
+.ul2 li:nth-last-child(1){
+    border: none;    
+}
+
+.ul2 li a{
+    padding: 0 9px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+}
+.container .ul2 li a:hover{
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.container .ul3{
+    padding: 0;
+    border-bottom: solid 1px white;
+    padding: 0;
+}
+
+.container .ul3 li{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.container .ul3 li a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    display: block;
+    padding-left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.container .ul3 li a:hover{
+    display: block;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-images{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.menu-image{
+    width: 93px;
+    height: 133px;
+    background-image: url(./images/menunew\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.menu-image2{
+    width: 93px;
+    height: 133px;
+    background-image: url(./images/menunew\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+/*************** 뿤 뜑********************/
+
+
+/*************** 뿤 뜑********************/
+
+/**濡ㅻ쭅踰좊꼫**/
+
+.title-time {
+    font-size: 44px;
+    color: #fff;
+    position: absolute;
+    top: 90%;
+    left: 1%;
+    /* 蹂  삎 냽 꽦:  씠 룞( 쐞移섏“ 젙) */
+    text-align: center;
+    text-shadow: 0 0 8px #000;
+  }
+  #time {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+.frame {
+    overflow: hidden; 
+    position: relative;
+}
+.frame ul {
+    list-style: none; 
+    margin: 0 ; 
+    padding: 0; 
+    position: absolute;
+}
+.frame ul li { 
+    float: left; 
+    margin: 0 1px 0 0; 
+    padding: 0; 
+    cursor: pointer; 
+}
+.frame ul li img {
+    width:100%;
+}
+.frame ul li.active { 
+    color: #fff; 
+    background: #a03232; 
+}
+#rolling-main{
+    position: relative;
+    margin: 0 auto 0;
+    width: 100%;
+    height: 700px;
+}
+
+.swiper {
+  width: 90%;
+  height: 600px;
+}
+
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.swiper-button-next{
+    filter: opacity(0.2) drop-shadow(0 0 0 black);
+    margin-right: 20px;
+}
+.swiper-button-prev{
+    filter: opacity(0.2) drop-shadow(0 0 0 black);
+}
+.swiper-pagination{
+    filter: opacity(0.3) drop-shadow(0 0 0 black);
+}
+/****************濡ㅻ쭅踰좊꼫 걹********************/
+/***************肄섑뀗痢쟙hay's box********************/
+.contents{
+   margin-bottom: 50px ;
+    overflow: hidden;
+    
+}
+
+
+.contents-main-image {
+    position: relative;
+    margin-top: 35px;
+    float: left;
+}
+
+.dc{
+    position: absolute;
+    float: left;
+    width: 124px;
+    height: 124px;
+    border: solid 7px white;
+    border-radius: 100% ;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    font-size: 30px;
+    background: #f26c4f;
+    top: 650px;
+    left: 38px;
+    z-index: 900;
+}
+
+.dc a,.dc2 a, .dc3 a{
+    color: white;
+}
+.contents-main-image .img{
+    position: relative;
+    background-image: url("./images/ 쁺蹂댁뒪  룷 뒪 꽣 蹂듭궗.png");
+    width: 510px;
+    height: 727px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+    z-index: 500;
+
+}
+
+.image-text{
+    width: 100%;
+    position: absolute;
+    z-index: 1001;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+}
+.image-text p:nth-child(1){
+    font-size: 40px;
+}
+.image-text p:nth-child(5){
+    font-size: 40px;
+}
+
+.contents-main-image a .image-box:hover .img{
+    filter: brightness(30%);
+    transition: 0.5s;
+}
+.contents-main-image a .image-box:hover .image-text{
+    opacity: 1;
+    z-index: 1000;
+}
+
+
+.contents-sub-image {
+    position: relative;
+    margin-top: 35px;
+    float: left;
+}
+.contents-sub-image .img1{
+    margin-left: 18px;
+    background-image: url('./images/蹂대룄吏 移 .png');
+    position: relative;
+    width: 230px;
+    height: 345px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+}
+.contents-sub-image .img2{
+    margin-left: 18px;
+    background-image: url('./images/蹂대룄吏 移 .png');
+    position: relative;
+    width: 230px;
+    height: 345px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+}
+.contents-sub-image .img3{
+    margin-left: 18px;
+    background-image: url('./images/ 뿤 뱶 쐟.png');
+    position: relative;
+    width: 230px;
+    height: 345px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+}
+.contents-sub-image .img4{
+    margin-left: 18px;
+    background-image: url('./images/移댄룷 꽕.png');
+    position: relative;
+    width: 230px;
+    height: 345px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+}
+.contents-sub-image .img5{
+    margin-left: 18px;
+    background-image: url('./images/移댄룷 꽕.png');
+    position: relative;
+    width: 230px;
+    height: 345px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+}
+.dc2{
+    position: relative;
+    z-index: 900;
+    float: left;
+}
+.image-text2{
+    width: 100%;
+    position: absolute;
+    z-index: 1001;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+}
+
+.rank{
+    float: left;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border: solid 7px white;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    font-size: 20px;
+    background: #f26c4f;
+    top: 298px;
+    left: 30px;
+    border-radius: 100%;
+    z-index: 100;
+}
+.rank::before {
+    content: " 삁留 ";
+    /* 異붽  쟻 씤  뒪   씪留   냽 꽦 */
+}
+
+.contents-sub-image a .image-box:hover .img2{
+    filter: brightness(30%);
+    transition: 0.5s;
+}
+
+.contents-sub-image a .image-box:hover .img3{
+    filter: brightness(30%);
+    transition: 0.5s;
+}
+
+.contents-sub-image a .image-box:hover .img4{
+    filter: brightness(30%);
+    transition: 0.5s;
+}
+.contents-sub-image a .image-box:hover .image-text2{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+/**************** 꽌釉뚯씠誘몄 2********************/
+.image-box{
+    float: left;
+}
+.dc3{
+    position: relative;
+    z-index: 900;
+    float: left;
+}
+.image-text2{
+    width: 100%;
+    position: absolute;
+    z-index: 1001;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+}
+
+.rank{
+    float: left;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border: solid 7px white;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    font-size: 20px;
+    background: #f26c4f;
+    top: 298px;
+    left: 30px;
+    border-radius: 100%;
+    z-index: 100;
+}
+.contents-sub-image2 a .image-box:hover .img5{
+    filter: brightness(30%);
+    transition: 0.5s;
+}
+
+.contents-sub-image2 a .image-box:hover .img6{
+    filter: brightness(30%);
+    transition: 0.5s;
+}
+
+.contents-sub-image2 a .image-box:hover .img7{
+    filter: brightness(30%);
+    transition: 0.5s;
+}
+.contents-sub-image2 a .image-box:hover .image-text2{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/***************** 옲 궧***************************/
+
+.dc-sub3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3열 그리드, 각 열은 사용 가능한 공간의 동일한 비율로 설정 */
+    grid-gap: 20px; /* 그리드 아이템 사이의 간격 */
+    margin: auto;
+    height: auto; /* 고정 높이에서 자동 높이로 변경하여 내용에 맞게 조정 */
+    max-width: 100%; /* 최대 너비 설정, 필요에 따라 조정 가능 */
+}
+
+
+.rank-img-box{
+    display: flex;
+    margin: auto;
+}
+
+
+.product_img {
+    text-align: center; /* 감싸는 div 내의 인라인 요소(예: <img>)를 가운데 정렬 */
+    width: auto; /* 너비를 자동으로 설정하여 내용에 맞춤 */
+    margin: auto; /* 상위 요소의 너비에 따라 좌우 마진을 자동으로 조절하여 중앙 정렬 */
+    object-fit: cover; /* 이미지 비율 유지하며 컨테이너에 맞춤 */
+}
+
+
+.rank-img-box:hover .rank-text{
+    opacity: 1;
+    z-index: 1000;
+    font-size: 20px;
+}
+
+.dc4 {
+    /* float 속성 제거, 불필요해짐 */
+    margin: 0; /* 기본 마진 조정 */
+    width: 100%; /* 그리드 아이템은 그리드 셀의 너비를 자동으로 채움 */
+    height: auto; /* 고정 높이에서 자동 높이로 변경, 각 아이템의 내용에 맞게 조정 */
+    border-bottom: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 컨텐츠를 수직 방향으로 공간 분배 */
+    padding-bottom: 15px;
+}
+.dc4 .rank3 {
+    width: 76px;
+    height: 76px;
+    color: white;
+    font-size: 20px;
+    background: #f26c4f;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.product_info{
+    font-size: 18px;
+    width: 240px;
+}
+/* 버튼 시작 -------------------------------------*/
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+
+}
+
+/* button 대신 .button 클래스로 변경합니다. */
+.button_title {
+    --width: 400px;
+    --height: 80px;
+    display: flex;
+    border: none;
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--height);
+    color: #fff;
+    font-weight: bold;
+	    
+    cursor: pointer;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    font-size: 40px;
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    background-color: rgb(9,77,150); 
+
+}
+
+
+.button_text{
+    position: relative;
+    z-index: 2;
+}
+
+.button_title:hover .button_text::after {
+    content: " +"; /* 마우스를 올렸을 때 표시될 텍스트 */
+    position: absolute;
+    right: -40px; /* "+" 위치 조정 */
+    top: -5;
+    color: #fff; /* "+" 색상 */
+    font-weight: bold; /* "+" 폰트 두께 */
+    font-size: 40px; /* "+" 폰트 크기 */
+
+}
+
+
+.button_title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    border-radius: var(--height);
+    z-index: 1;
+    transition: transform 700ms ease;
+    
+    background-color: rgb(12,121,238);
+}
+
+.button_title:hover::after {
+    transform: translateX(60%);
+}
+
+/* 버튼 끝 -----------------------------------------*/
+
+.rankingimage{
+   background-color: white;
+   border-top: 1px solid;
+   border-left: 1px solid;
+   border-right: 1px solid;
+   
+}

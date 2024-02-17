@@ -1,0 +1,178 @@
+/* 湲곕낯 �뒪���씪 */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
+}
+
+.cart-container {
+	margin-top:50px;
+	width: 80%;
+	margin: 20px auto;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	padding-bottom: 100px;
+}
+
+.cart-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.progress-bar {
+	text-align: right;
+	font-size: 0.8em;
+	color: #333;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f7f7f7;
+	margin: 0;
+	padding: 0;
+}
+
+.roadAddress {
+	width: 300px; /* 泥� 踰덉㎏ �뀓�뒪�듃 諛뺤뒪 湲몄씠 �뒛由� */
+	margin-top: 10px;
+	margin-bottom: 10px; /* �븘�옒履� 媛꾧꺽 異붽� */
+}
+
+.additionalAddress {
+	width: 400px; /* �몢 踰덉㎏ �뀓�뒪�듃 諛뺤뒪 湲몄씠 �뜑 �뒛由� */
+}
+
+.form-container {
+    width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 50px;
+    border: 1px solid black;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    font-size: 20px;
+ 
+}
+
+.form-container h2 {
+	margin-top: 0;
+	background-color: #f7f7f7;
+	padding: 10px;
+	border: 1px solid #e1e1e1;
+	
+}
+
+.form-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+.form-table th, .form-table td {
+	border: 1px solid #e1e1e1;
+	padding: 10px;
+	text-align: left;
+}
+
+.form-table th {
+	width: 20%;
+	background-color: #D9D9D9;
+}
+
+.form-table .full-width {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.form-table .phone {
+	width: 80px; /* Adjusted for phone number input size */
+}
+
+.form-table .address {
+	width: 60%; /* Adjusted for address input size */
+}
+
+.form-table .message {
+	width: calc(100% - 22px); /* Full width for message input */
+}
+
+textarea, .full-width {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.progress-bar .point {
+	font-size: 15px; /* �썝�븯�뒗 �겕湲곕줈 議곗젙�븯�꽭�슂 */
+	font-weight: bold;
+}
+
+.pay-button {
+	width: 200px;
+	height: 50px;
+	padding: 10px;
+	margin-top: 20px;
+	color: white;
+	background-color: #486CEA;
+	border-color: white;
+}
+
+.total {
+	font-weight: bold;
+}
+
+.pay-button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.pay-button:hover {
+	background-color: #3451b5; /* �샇踰� �떆 諛곌꼍�깋 蹂�寃� */
+	border-color: #3451b5; /* �샇踰� �떆 �뀒�몢由� �깋�긽 蹂�寃� */
+}
+
+.lastPrice {
+	text-align: right;
+	border: 1px solid #e1e1e1;
+	padding: 10px;
+}
+
+.lastPrice .price {
+	font-size: 25px;
+}
+
+.form-main {
+	text-align: center;
+}
+
+.point-main {
+	color: #486CEA;
+}
+button.form-back {
+    padding: 10px;
+    width: 200px;
+    height: auto;
+   font-weight: bold; 
+    border: 1px solid black;
+    font: 50px;
+    background: white;
+    font-size: 20px;
+    cursor: pointer;
+ float:right;
+}
+button.form-back:hover{
+	background-color: #486CEA; 
+	color:white;
+	border-color:white;
+	transition: background-color 0.3s ease;
+	
+}

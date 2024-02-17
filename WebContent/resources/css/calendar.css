@@ -1,0 +1,208 @@
+.calendar * {
+
+  box-sizing: border-box;
+
+  font-weight: bold;
+}
+
+body {
+  width: 100%;
+  background: #f7f8fb;
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  zoom: 0.9;
+}
+
+#prevMonth ,#nextMonth{
+	width:60px;
+	margin-top: 22px 
+}
+
+.calendar_left {
+  background: #00A8E8;
+  width: 750px; /* Updated */
+  height: 800px; /* Updated */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 1em; /* Adjusted */
+  z-index: 1;
+}
+
+.calendar_left .calendar_header {
+  height: 100px; /* Adjusted */
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em; /* Adjusted */
+  color: #FFF;
+  font-size: 1.4em; /* Adjusted */
+}
+
+#currentYear{
+	font-size: 25px;
+}
+#currentMonth{
+	font-size: 40px;
+}
+
+.calendar_days {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.calendar_days .day_item {
+  color: #FFF;
+  width: 100px; /* Adjusted */
+  text-align: center;
+  padding-bottom: 2em; /* Adjusted */
+}
+
+.calendar_dates {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+
+}
+
+.calendar_dates .date_item {
+
+  color: #FFF;
+  width: 100px;
+  height: 90px; 
+  cursor: pointer;
+  border-radius: 100%;
+  line-height: 80px; 
+  font-size: 35px;
+  text-align: center;
+}
+
+.calendar_right {
+  background: #009ad1;
+  width: 700px; /* Adjusted */
+  height: 770px; /* Adjusted */
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  transform: scale(1) translateX(-20px); /* Adjusted */
+  z-index: 0;
+}
+
+.calendar_right .list {
+  height: 740px; /* Adjusted */
+  overflow-y: scroll;
+  padding: 1em;
+}
+
+.calendar_right .list ul {
+  padding: 2.25em;
+}
+/* 
+.calendar_right .list li {
+  padding: 1em; Adjusted
+  width: 400px; Adjusted
+  color: #FFF;
+} */
+
+
+
+.present {
+  font-size: 50px !important;
+  background: #FFF;
+  transform: scale(0.7);
+  border-radius: 50px;
+  color: #00A8E8 !important;
+  z-index: 0;
+  box-shadow: 10px 10px 5px #007ca3;
+  animation: bounce-button-in .45s 0s cubic-bezier(0.175, 0.885, 0.320, 1.275) forwards;
+
+}
+
+.month_before_present, .month_after_present {
+  text-align: center;
+}
+/* 월 눌르면 효과
+.month_after_present {
+  width: 80%;
+  background: #FFF;
+  border-radius: 10px;
+  color: #00A8E8 !important;
+  z-index: 0;
+}
+ */
+#eventList{
+	font-size: 24px;
+	padding: 1em; /* Adjusted */
+	width: 400px; /* Adjusted */
+  	color: #FFF;
+}
+#addEventForm{
+	background: #008fc4; /* Input */
+    color: #FFF;
+	display: grid;
+    grid-template-columns: 70% 30%;
+
+}
+#Select_team{
+	background: #008fc4;
+    color: #FFF;
+	width: 100%;
+	height: 100%;
+	font-size: 24px;
+}
+#eventDescription{
+	font-size: 24px;
+}
+
+
+.eventList_content{
+	width : 100%;
+	display: flex;
+	gap: 20px;
+	margin : 10px;
+}
+.eventList_content button{
+	width: 200px;
+}
+/* Browser Specific Overwrites */
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-input-placeholder {
+  color: #FFF;
+}
+
+/* Animations */
+.bounce-in.ng-animate { 
+  animation: none 0s; 
+}
+
+.bounce-in {
+  animation: bounce-in .9s 0s cubic-bezier(0.175, 0.885, 0.320, 1.275) forwards;
+}
+
+@keyframes bounce-in {
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(7px);
+  }
+  100% {
+    transform: translateX(2px);
+  }
+}
+
+@keyframes bounce-button-in {
+  0% {
+    transform: translateZ(0) scale(0);
+  }
+  100% {
+    transform: translateZ(0) scale(0.7);
+  }
+}

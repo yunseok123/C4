@@ -1,0 +1,394 @@
+/* 1.css + 2.css  넻 빀 CSS */
+
+:root {
+  /* colors */
+  --blue: rgba(79, 192, 210, 1);
+  --green: rgba(82, 210, 154, 1);
+  --yellow: rgba(238, 255, 0, 0.7);
+  --orange: rgba(235, 118, 85, 1);
+  --dark-bg: rgba(0, 0, 0, 0.9);
+  --light-bg: rgba(255, 255, 255, 0.1);
+  --text: rgba(255, 255, 255, 0.9);
+  --Viva_Magenta: rgba(187, 38, 73, 1);
+  /* --Viva_Magenta: #41d26b; */
+
+  --dark-blue: #4f8096; /* Darkened blue */
+  --dark-green: #529672; /* Darkened green */
+  --dark-yellow: #e7c468; /* Darkened yellow */
+  --dark-orange: #eb7655; /* Darkened orange */
+  --light-dark-bg: #333333; /* Lightened dark-bg */
+  --dark-light-bg: #000000; /* Darkened light-bg */
+}
+
+/* links */
+  .BlueC a, .GreenC a, .yellowC a, .OrangeC a {
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+  }
+
+.BlueC a {
+  color: var(--blue);
+}
+
+.BlueC a:hover {
+  color: var(--dark-blue);
+}
+
+.GreenC a {
+  color: var(--green);
+}
+
+.GreenC a:hover {
+  color: var(--dark-green);
+}
+
+.yellowC a {
+  color: var(--yellow);
+}
+
+.yellowC a:hover {
+  color: var(--dark-yellow);
+}
+
+.OrangeC a {
+  color: var(--orange);
+}
+
+.OrangeC a:hover {
+  color: var(--dark-orange);
+}
+
+.TableContainer {
+  display: FLEX;
+
+}
+
+.TableContainer * {
+	
+	  box-sizing: border-box;
+
+	}
+	
+
+.wrapper,
+.card.tabs {
+  flex: 1;
+  min-height: 700px;
+  margin: 10px;
+  color: var(--text);
+  overflow: hidden;
+  position: relative;
+}
+
+/* wrapper */
+.wrapper {
+  background: var(--dark-bg);
+  height: auto;
+  padding: 0;
+  color: var(--text);
+  overflow: hidden;
+  position: relative;
+}
+
+/* lists */
+.row ul {
+  display: flex;
+  list-style: none;
+}
+
+
+.row ul li {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  list-style: none;
+  display: inline-block;
+  width: 12.5%;
+  box-sizing: border-box;
+    padding: 5px 10px;
+}
+
+/* Specific width for "팀명" */
+.row ul li:nth-child(2) {
+  width: 135px; /* Fixed width for "팀명" */
+  flex-shrink: 0; /* Prevent "팀명" from shrinking */
+}
+
+/* Allow other list items to fill the remaining space */
+.row ul li:not(:nth-child(2)) {
+  flex-grow: 1;
+  text-align: center; /* Optional: Center-align the content */
+}
+
+.attribute ul li {
+  padding: 15px 13px;
+}
+
+
+/* rows */
+.row {
+  padding: 20px 0;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+  border-top: 1px solid var(--dark-light-bg);
+  font-size: 0;
+}
+
+.row:hover {
+  background-color: var(--Viva_Magenta);
+  height: 110px;
+}
+
+.attribute {
+  padding: 0 0 20px 0;
+  height: 60px;
+  font-size: 0;
+  background-color: var(--light-bg);
+}
+
+.attribute-hide {
+  display: none;
+}
+
+.attribute:hover {
+  background-color: var(--blue);
+  border-left: 3px solid #ffffff;
+  height: 60px
+}
+/* 
+.row attribute ul li {
+    flex: 1; flexbox를 사용하여 나머지 항목들이 자동으로 너비를 조정하도록 함
+    
+}
+ */
+ .TableContainer ul{
+     list-style-type: none; /* 점을 없애려면 */
+    margin-block-start: 0; /* 상단 마진 제거 */
+    margin-block-end: 0; /* 하단 마진 제거 */
+    margin-inline-start: 0; /* 좌측 마진 제거 */
+    margin-inline-end: 0; /* 우측 마진 제거 */
+    padding-inline-start: 0; /* 기본 패딩 제거 */
+    }
+/* "팀명" 항목에 대한 스타일 */
+.row attribute ul li:nth-child(2) {
+    flex: 0 0 210px; /* flex-grow, flex-shrink를 0으로 설정하고, flex-basis를 210px로 설정 */
+    width: 210px; /* 너비를 명시적으로 210px로 설정 */
+}
+
+/* more content */
+ul.more-content li {
+  position: relative;
+  top: 22px;
+  font-size: 13px;
+  margin: 0;
+  padding: 10px 13px;
+  display: block;
+  height: 50px;
+  width: 100%;
+  color: #cccccc;
+}
+
+@media only screen and (max-width: 767px) {
+  ul.more-content li {
+    font-size: 11px;
+  }
+}
+
+/* small content */
+.RankingUp::before {
+  content: "( 넁)";
+  color: red;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 0 10px;
+  margin: 0;
+  position: relative;
+  top: -3px;
+}
+
+.RankingDown::before {
+  content: "( 넃)";
+  color: #0077FF;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 0 10px;
+  margin: 0;
+  position: relative;
+  top: -3px;
+}
+
+@media only screen and (max-width: 767px) {
+  .small {
+    display: none;
+  }
+}
+
+/*==============================================================================*/
+
+.tabs {
+  text-align: left;
+  position: relative;
+}
+
+.tabs input {
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+.tabs input + label:hover {
+  color: #777;
+}
+
+.tabs .tabsShadow {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+  position: absolute;
+  height: 35px;
+  z-index: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  height: 100%; 
+   background: var(--dark-bg);
+}
+
+.item {
+  display: none; 
+  flex: 0 0 100%;
+  justify-content: center; 
+  align-items: center; 
+}
+
+#tab-1:checked ~ .content #content-1,
+#tab-2:checked ~ .content #content-2,
+#tab-3:checked ~ .content #content-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#tab-1:checked ~ .glider {
+  left: 0px;
+}
+
+#tab-2:checked + label {
+  color: #51a14c;
+}
+
+#tab-2:checked ~ .glider {
+  background: linear-gradient(90deg, #51a14c 0%, #10c33e 100%);
+  box-shadow: 0px 0px 8px 0px rgba(47, 187, 12, 0.62);
+}
+
+#tab-3:checked + label {
+  color: #525252;
+}
+
+.tabs input + label {
+  width: 49.7%;
+  height: 60px;
+  transition: all 0.3s;
+  text-align: center;
+  border: none;
+  border-bottom: 0.5pt solid #1d1e22;
+  color: #e7e9f5;
+  display: inline-flex;
+  -webkit-box-pack: center;
+/*   padding: 5pt 10pt; */
+  vertical-align: top;
+  justify-content: flex-start;
+  background: #333;
+  box-shadow: 1px 1px 2px 1px #231f20;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22pt;
+  background: #26292c;
+  margin-bottom: 0.5px;
+  border-radius: 12px 12px 0 0 !important;
+/*   border-top: 1px solid #3b3d3f; */
+  letter-spacing: 0.1666666667em !important;
+  font-family: "antique-olive" !important;
+  background: hsl(232deg 6% 17%);
+  cursor: pointer;
+  align-items: center;
+}
+
+.tabs label {
+  font-weight: bold;
+}
+
+.tabs input:checked + label {
+  border-bottom: 2px solid var(--Viva_Magenta);
+  color: var(--Viva_Magenta);
+}
+
+.profile-pic-container {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%; 
+  margin-top: 20px;
+}
+/*--------------------------------------------------------------------  */
+.rankings-wrapper {
+  display: flex;
+  justify-content: space-around; 
+}
+
+.ranking-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 10px; 
+  margin: 0 15px; 
+
+  font-size: 20px;
+}
+
+.ranking-info {
+  text-align: center;
+  margin-bottom: 15px; /*  빆紐⑸뱾  궗 씠 쓽 媛꾧꺽 쓣  몺 */
+}
+.ranking-info .ranking-row{
+  margin: 10px 0; 
+}
+.ranking-info .ranking-row2,
+.ranking-info .ranking-row3 {
+  margin: 20px 0; 
+}
+.profile-pic-container {
+  margin-bottom: 10px; 
+}
+
+
+.ranking-container {
+  min-width: 210px; 
+}
+
+.profile-pic {
+  width: 100px; 
+  height: auto; 
+}
+
+#rank-catagory {
+  background-color: transparent;
+  font-weight: bold;
+  margin: 20px 0;
+}
+/*==============================================================================*/
+   

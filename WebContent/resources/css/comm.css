@@ -1,0 +1,96 @@
+
+
+.board-container {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 15px;
+    width: 50%; /* You can adjust this as needed */
+    margin: 20px auto; /* Added space from the HR */
+    min-height: 80vh; /* 80% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Removing the border from the container */
+    border: none; /* If you want no border at all */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: adds subtle shadow for depth */
+}
+
+.board-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.board-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.board-author {
+    font-size: 16px;
+    color: #333;
+}
+
+.board-info {
+    display: flex;
+}
+
+.board-date,
+.board-views {
+    font-size: 16px;
+    color: #333;
+    margin-left: 15px; /* Space between date and view count */
+}
+
+.board-content {
+    padding: 30px;
+    background-color: white;
+    /* Removing the border from the content area */
+    border: none; /* No border for the content area */
+    margin-bottom: 10px;
+    min-height: 60vh; /* 60% of the viewport height */
+    overflow-y: auto;
+   font-size: 30px; /* Increased font size */
+
+}
+
+.board-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.nav-previous, .nav-next {
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+}/* ... existing styles ... */
+
+/* ... existing styles ... */
+
+.separator {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+.nav-previous, .nav-next {
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.nav-arrow {
+    margin-left: 5px; /* Space between the text and the arrow */
+}
+
+
+

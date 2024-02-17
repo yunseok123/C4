@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+body {
+   font-family: 'Arial', sans-serif;
+   background-color: #f4f4f4;
+   /* Assuming you want a light grey background for the body */
+   margin: 0;
+   padding: 0;
+}
+
+.ranking-container {
+   display: flex;
+   flex-direction: row;
+   /* Layout the teams in a row */
+   justify-content: center;
+   flex-wrap: wrap;
+   /* Allow the items to wrap in case of small screen */
+   padding-top: 50px;
+   /* Space from the top */
+   grid-gap: 25px;
+}
+
+.team {
+   width: 200px;
+   /* Fixed width for each team card */
+   border: 1px solid #ddd;
+   margin: 10px;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   /* Stack the children vertically */
+   align-items: center;
+   /* Center-align the children */
+   background-color: white;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   /* Optional: adds subtle shadow to the card */
+}
+
+.position {
+   margin-right: 180px;
+   font-size: 47px;
+   /* Larger font size for ranking number */
+   color: #333;
+   /* Dark grey color for the text */
+   margin-bottom: 10px;
+   /* Space after the ranking number */
+}
+
+.team-logo {
+   height: 100px;
+   /* Adjust height of logo */
+   margin-bottom: 20px;
+   /* Space after the logo */
+}
+
+.details {
+   text-align: center;
+   /* Center-align the text */
+}
+
+
+
+.team-name {
+   font-weight: bold;
+}
+
+:root {
+   /* colors */
+   --blue: rgba(79, 192, 210, 1);
+   --green: rgba(82, 210, 154, 1);
+   --yellow: rgba(238, 255, 0, 0.7);
+   --orange: rgba(235, 118, 85, 1);
+   --dark-bg: rgba(0, 0, 0, 0.9);
+   --light-bg: rgba(255, 255, 255, 0.1);
+   --text: rgba(255, 255, 255, 0.9);
+   --Viva_Magenta: rgba(187, 38, 73, 1);
+   /* --Viva_Magenta : #41d26b; */
+
+
+   --dark-blue: #4f8096;
+   /* Darkened blue */
+   --dark-green: #529672;
+   /* Darkened green */
+   --dark-yellow: #e7c468;
+   /* Darkened yellow */
+   --dark-orange: #eb7655;
+   /* Darkened orange */
+   --light-dark-bg: #333333;
+   /* Lightened dark-bg */
+   --dark-light-bg: #000000;
+   /* Darkened light-bg */
+}
+
+
+/* links */
+.BlueC a,
+.GreenC a,
+.yellowC a,
+.OrangeC a {
+   text-decoration: none;
+   transition: color 0.2s ease-out;
+}
+
+.BlueC a {
+   color: var(--blue);
+}
+
+.BlueC a:hover {
+   color: var(--dark-blue);
+}
+
+.GreenC a {
+   color: var(--green);
+}
+
+.GreenC a:hover {
+   color: var(--dark-green);
+}
+
+.yellowC a {
+   color: var(--yellow);
+}
+
+.yellowC a:hover {
+   color: var(--dark-yellow);
+}
+
+.OrangeC a {
+   color: var(--orange);
+}
+
+.OrangeC a:hover {
+   color: var(--dark-orange);
+}
+
+.TableContainer {
+   display: flex;
+   margin: 20px 100px;
+
+   justify-content: center;
+
+}
+
+/*테이블 전체 크기 설정*/
+.wrapper,
+.card.tabs {
+   flex: 1;
+   /* 같은 비율로 공간을 차지하도록 설정 */
+   /*min-height: 600px;*/
+   margin: 10px;
+   border: 1px solid #e3e3e3;
+   background: var(--dark-bg);
+   color: var(--text);
+   overflow: hidden;
+   position: relative;
+   max-width: 750px;
+
+}
+
+
+/* wrapper */
+.wrapper {
+   background: var(--dark-bg);
+   /* Set a specific width or max-width for the .wrapper if needed */
+   width: 90%;
+   /* This is an example; it can be any width */
+   max-width: 800px;
+   /* This is an example; it can be any max-width */
+   margin: auto;
+
+   /* This will take care of vertical centering if the height is less than the viewport */
+   
+   /* Example padding; adjust as needed */
+   color: var(--text);
+   overflow: hidden;
+   position: relative;
+   margin-top: 40px;
+   background-color: white;
+   /* Keep as relative unless you need a different positioning context */
+}
+
+/* lists */
+.row ul {
+   margin: 0;
+   padding: 0;
+}
+
+.row ul li {
+   /* 글자 크기 */
+   margin: 0;
+   font-size: 16px;
+   font-weight: bold;
+   list-style: none;
+   display: inline-block;
+   width: 12.5%;
+   box-sizing: border-box;
+   
+}
+
+
+.attribute ul li {
+   padding: 15px 13px;
+}
+
+.row ul li {
+   padding: 5px 10px;
+}
+
+/* rows */
+.row {
+   padding: 20px 0;
+   /* 줄 높이 */
+   height: 40px;
+   position: relative;
+   overflow: hidden;
+   transition: all 0.2s ease-out;
+   border-top: 1px solid var(--dark-light-bg);
+   font-size: 0;
+   color: black;
+}
+
+
+
+.attribute {
+   /* 첫줄*/
+   padding: 0 0 20px 0;
+   height: 20px;
+   font-size: 0;
+   background-color:  #486CEA;
+   color: white;
+}
+
+.attribute-hide {
+   display: none;
+}
+
+
+
+/*.BlueC { border-left: 3px solid var(--dark-blue); }*/
+/*.BlueC:hover { border-left: 3px solid var(--blue); }*/
+/*.GreenC { border-left: 3px solid var(--dark-green); }*/
+/*.GreenC:hover { border-left: 3px solid var(--green); }*/
+/*.yellowC { border-left: 3px solid var(--dark-yellow); }*/
+/*.yellowC:hover { border-left: 3px solid var(--yellow); }*/
+/*.OrangeC { border-left: 3px solid var(--dark-orange); }*/
+/*.OrangeC:hover { border-left: 3px solid var(--orange); }*/
+
+/* more content */
+ul.more-content li {
+   position: relative;
+   top: 22px;
+   font-size: 13px;
+   margin: 0;
+   padding: 10px 13px;
+   display: block;
+   height: 50px;
+   width: 100%;
+   color: #cccccc;
+   /* Darkened text */
+}
+
+@media only screen and (max-width: 767px) {
+   ul.more-content li {
+      font-size: 11px;
+   }
+}
+
+/* small content */
+.RankingUp::before {
+   content: "(↑)";
+   color: red;
+   /* Darkened text */
+   font-weight: bold;
+   font-size: 10px;
+   padding: 0 10px;
+   margin: 0;
+   position: relative;
+   /* 상대적 위치 설정 */
+   top: -3px;
+   /* 텍스트를 3픽셀 위로 이동 */
+}
+
+.RankingDown::before {
+   content: "(↓)";
+   color: #0077FF;
+   /* Darkened text */
+   font-weight: bold;
+   font-size: 12px;
+   padding: 0 10px;
+   margin: 0;
+   position: relative;
+   top: -3px;
+}
+
+@media only screen and (max-width: 767px) {
+   .small {
+      display: none;
+   }
+}

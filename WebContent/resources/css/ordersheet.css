@@ -1,0 +1,150 @@
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.cart-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    text-align: right;
+    font-size: 0.8em;
+    color: #333;
+}   
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+.roadAddress {
+    width: 300px; /* 첫 번째 텍스트 박스 길이 늘림 */
+    margin-top:10px;
+    margin-bottom: 10px; /* 아래쪽 간격 추가 */
+}
+
+.additionalAddress {
+    width: 400px; /* 두 번째 텍스트 박스 길이 더 늘림 */
+}
+
+.form-container {
+    width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+.form-container h2 {
+    margin-top: 0;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+}
+
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.form-table th,
+.form-table td {
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    text-align: left;
+}
+
+.form-table th {
+    width: 20%;
+    background-color: #D9D9D9;
+}
+
+.form-table .full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-table .phone {
+    width: 80px; /* Adjusted for phone number input size */
+}
+
+.form-table .address {
+    width: 60%; /* Adjusted for address input size */
+}
+
+.form-table .message {
+    width: calc(100% - 22px); /* Full width for message input */
+}
+
+textarea, .full-width {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.postButton{
+	background-color:white;
+	width:140px;
+	height:29px;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+	
+}
+
+
+ .progress-bar .point {
+        font-size: 15px; /* 원하는 크기로 조정하세요 */
+        font-weight: bold;
+    }
+
+.pay-button {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    background-color: #486CEA;
+    border-color: white;
+}
+
+.total {
+    font-weight: bold;
+}
+.pay-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.pay-button:hover {
+    background-color: #3451b5; /* 호버 시 배경색 변경 */
+    border-color: #3451b5; /* 호버 시 테두리 색상 변경 */
+}
+.lastPrice{
+	text-align: right;
+	border: 1px solid #e1e1e1;
+	padding: 10px;
+}
+.lastPrice .price{
+	font-size: 25px;
+}

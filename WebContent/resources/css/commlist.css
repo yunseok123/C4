@@ -1,0 +1,127 @@
+
+
+/* 댓글 컨테이너 스타일 */
+.comments-container {
+    max-width: 768px; /* 컨테이너의 최대 너비를 줄임 */
+    margin-top: 50px;
+    margin-left: 500px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+    
+}
+
+/* 댓글 작성 폼 스타일 */
+.comment-form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.comment-form textarea {
+    flex: 4;
+    margin-right: 30px;
+    border: 1px solid #ccc;
+    height:20px;
+    padding: 10px;
+}
+.select-sport{
+	flex: 0;
+    border: 1px solid #ccc;
+    margin-right: 40px;
+    height:40px;
+    width: 200px;
+    padding: 10px;
+}
+.comment-form button {
+    padding: 10px 20px;
+    background-color: #3A4C8C;
+    color: white;
+    border: none;
+    width: 80px;
+    height:40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* 댓글 목록 스타일 */
+.comments-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-list .comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.comments-list .comment span {
+    margin: 0 10px;
+}
+
+.comment-name {
+    flex-basis: 20%;
+}
+
+.comment-content {
+    flex-grow: 2;
+    text-align: left;
+}
+
+.comment-date {
+    flex-basis: 20%;
+}
+
+/* 페이지 네이션 스타일 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    flex: 1;  
+    margin-left: 300px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+    
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}
+.create-comment-button {
+	width:100px;
+	height:40px;
+    padding: 10px 20px;
+    background-color: #eaeaea;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin-left: 200px;
+    
+
+ 
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 500px;
+    max-width: 768px;
+}
+.pagination-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}

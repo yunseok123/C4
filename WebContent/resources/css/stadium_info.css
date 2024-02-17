@@ -1,0 +1,100 @@
+/* 전체 페이지 스타일링 */
+body {
+   width:1920px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a { /* 밑줄 없애기 */
+   text-decoration-line: none;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 경기장 정보 섹션 스타일링 */
+.stadium-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-holder img {
+    width: 100%;
+    max-width: 600px; /* 이미지 크기 조정 */
+    height: auto;
+    border-radius: 10px; /* 이미지 모서리 둥글게 */
+}
+
+/* 팀 소개 및 경기장 설명 스타일링 */
+.team-intro-container {
+    margin-top: 20px;
+}
+
+.description h1 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.description p {
+    font-size: 16px;
+}
+
+/* 연락처, 주소, 교통 정보 섹션 스타일링 */
+
+.details {
+    font-family: Arial, sans-serif; /* 폰트 스타일 설정 */
+    background-color: #f9f9f9; /* 배경색 */
+    padding: 20px; /* 패딩 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 그림자 효과 */
+    margin: 20px 0; /* 마진 */
+    font-size: 23px;
+}
+
+.info_contain {
+   font-size: 15px;
+    margin-bottom: 15px; /* 정보 컨테이너 간의 마진 */
+}
+
+.info-title {
+    font-size: 30px; /* 제목 폰트 크기 설정 */
+    font-weight: bold; /* 제목 글자 진하게 */
+    display: block; /* 블록 레벨 요소로 설정하여 다음 요소가 새 줄에서 시작하도록 함 */
+    margin-bottom: 5px; /* 제목과 내용 사이의 간격 */
+}
+
+.info_contain > div,
+.traffic > div {
+    background-color: #ffffff; /* 배경색 */
+    padding: 10px; /* 패딩 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05); /* 그림자 효과 */
+    margin-top: 5px; /* 상단 마진 */
+}
+
+.phone, .address, .traffic {
+    font-weight: bold; /* 글자 진하게 */
+}
+
+.traffic > div:not(:last-child) {
+    margin-bottom: 5px; /* 교통 정보 간의 마진 */
+}
+
+.info_contain > div:first-child, .traffic {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* 지도 API 섹션 스타일링 */
+.map-api {
+    width: 100%;
+    height: 400px; /* 지도 높이 설정 */
+    background-color: #f0f0f0; /* 임시 배경색, 실제 지도 API 적용 시 제거 */
+    margin-bottom: 20px;
+}

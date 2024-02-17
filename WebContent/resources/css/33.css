@@ -1,0 +1,97 @@
+@charset "UTF-8";
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .login-form {
+    width: 300px;
+    background: #fff;
+    padding: 40px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .form-field {
+    margin-bottom: 10px;
+  }
+  .form-field input {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .form-field label {
+    margin-bottom: 5px;
+    display: block;
+  }
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f3f3f3;
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .login-btn:hover {
+    background-color: #3D63E9;
+  }
+  .options {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .options a {
+    color: #003366;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  .options a:hover {
+    text-decoration: underline;
+  }
+  .login-btn, .kakao-login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.kakao-login-btn {
+    background-color: #FEE500; /* 카카오 색상 */
+    color: #3C1E1E; /* 카카오 로고 색상 */
+    font-weight: bold;
+}
+
+.kakao-login-btn:hover {
+    background-color: #ECD400; /* 호버 시 색상 변경 */
+}
+
+
+.easy-login-title {
+    text-align: center;
+    margin: 20px 0;
+    color: #333; 
+    font-size: 12px; 
+    opacity: 0.5;
+ 
+}
+
+.easy-login-title::before,
+.easy-login-title::after {
+    content: '';
+    display: inline-block;
+    width: 70px; /* 줄의 길이를 설정 */
+    height: 1px; /* 줄의 두께를 설정 */
+    vertical-align: middle;
+    background-color: #ccc;
+    margin: 0 10px;
+}

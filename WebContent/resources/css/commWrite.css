@@ -1,0 +1,82 @@
+.write-container {
+    width: 60%; 
+    margin: 50px auto; 
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input::placeholder {
+    font-size: 20px; /* 원하는 글씨 크기로 설정 */
+    padding-left: 15px;
+}
+
+.form-group1 {
+    margin-bottom: 15px;
+}
+
+.form-group input[type="text"]{
+   font-size: 20px;
+   outline:none;
+   width:70%;
+    margin: 0 auto; /* 상단과 하단의 마진은 0, 좌우 마진은 자동으로 설정하여 가운데 정렬 */
+    display: block;
+    height: 70px;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    box-sizing: border-box;
+    
+}
+
+select{
+   text-align:center;
+   padding: 10px 20px;
+   margin-top: 40px;
+   margin-left: 280px
+}
+
+textarea::placeholder{
+   font-size: 16px;
+   padding-left: 15px;
+}
+
+textarea {
+   outline:none;
+    font-size: 16px;
+    width: 70%;
+    height: 500px;
+    padding: 8px;
+    border: none;
+    box-sizing: border-box;
+    margin: 0 auto; /* 상단과 하단의 마진은 0, 좌우 마진은 자동으로 설정하여 가운데 정렬 */
+    display: block;
+    border-top: 2px solid #000; /* 위쪽 테두리 추가 */
+    border-bottom: 1px solid #000; /* 아래쪽 테두리 추가 */
+    border-left: none; /* 왼쪽 테두리 제거 */
+    border-right: none;
+}
+
+.content{
+    height: 20px; 
+    width: 100%; 
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+   margin-top: 40px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 0.5px solid;
+    cursor: pointer;
+    float: right;   
+    margin-right: 280px;
+}
+
+.submit-button:hover {
+    background-color: gray;
+}

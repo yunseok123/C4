@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+
+.contents {
+	width: 1280px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 30px;
+}
+
+.allstar {
+    width:100%;
+    
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* This will make the .title-box-container take up the full width of the viewport. */
+.title-box-container {
+    display: flex; /* Establishes a flex container. */
+    justify-content: center; /* Centers flex items on the main axis (horizontally). */
+    align-items: center; /* Centers flex items on the cross axis (vertically). */
+  	margin-top: 100px;
+  	margin-bottom: 20px;
+}
+
+
+/* This will apply to the .title-box and center its text. */
+.title-box {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Resets any default margin. */
+    padding: 20px; /* Adds padding inside the .title-box */
+    border: 1px solid black;
+    width: 200px; /* Or whatever width you desire. */
+}
+
+.product-box {
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	transition: box-shadow 0.3s, opacity 0.3s; /* opacity 속성을 추가하여 투명도 변화를 추가 */
+}
+
+.product-box:hover {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	opacity: 0.5; /* 호버 시 반투명도 적용 */
+}
+
+.product-box2 {
+	padding: 20px;
+	text-align: center;
+}
+
+.product-box2 p {
+	margin: 10px 0;
+}
+
+.img1, .img2, .img3, .img4, .img5 {
+	width: 230px;
+	height: 345px;
+	background-size: cover;
+	background-position: center;
+}
+
+.img1 {
+	height: auto;
+	width:100%;
+}
+
+.img2 {
+	background-image: url('path/to/image2.jpg');
+}
+
+.img3 {
+	background-image: url('path/to/image3.jpg');
+}
+
+.img4 {
+	background-image: url('path/to/image4.jpg');
+}
+
+.img5 {
+	background-image: url('path/to/image5.jpg');
+}
+
+.dc-sub {
+	display: flex;
+	overflow: hidden;
+	position: relative;
+}
+
+.dc2 {
+	flex: 0 0 calc(33.33% - 20px);
+	margin-right: 20px;
+}
+
+/* 다른 스타일링은 여기에 추가하세요 */
+.arrow-button {
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1; /* 버튼이 앞으로 나오도록 설정 */
+}
+
+.prev-button {
+	position:absolute;
+	padding:10px;
+	margin-top: 70px;
+	margin-right : 20px;
+	border: 1px solid black;
+	font-size: 75px;
+	left: 0;
+	border-radius: 5px;
+}
+
+.next-button {
+	position:absolute;
+	padding:10px;
+	margin-top: 70px;
+	margin-left:50px;
+	border: 1px solid black;
+	font-size: 75px;
+	right: 0;
+	border-radius: 5px;
+}
+
+.product-text {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration: none; /* 밑줄 제거 */
+  padding: 10px;
+}
+
+.product-text span {
+  color: #FF0000; /* 가격에 대한 색상 설정 */
+  font-size: 18px;
+  font-weight: normal;
+  display: block; /* 가격을 한 줄로 표시하기 위해 블록 레벨 요소로 설정 */
+  margin-top: 5px;
+  
+}
+a{
+	 text-decoration: none; /* 밑줄 제거 */
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+.product-category {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    margin-top: 30px;
+     position: relative; 
+ 
+}
+
+.product-category::after {
+     content: ''; /* Required for pseudo-elements */
+    display: block; /* Treat the pseudo-element like a block-level element */
+    height: 1px; /* The thickness of the border */
+    background-color: #000; /* The color of the border */
+    width: 80%; /* Adjust this to set how long you want the line to be */
+    position: absolute; /* Position the pseudo-element with respect to .product-category */
+    left: 50%; /* Align the center of the pseudo-element with the center of the container */
+    bottom: -30px; /* Position the pseudo-element below the container */
+    transform: translateX(-50%); /* Center the pseudo-element */
+  	
+}
+
+.item {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.item span {
+    display: block;
+    margin-top: 5px;
+}
+
+.jersey-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.jersey {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: box-shadow 0.3s, opacity 0.3s;
+}
+
+.jersey img {
+    max-width: 100%;
+    display: block;
+}
+
+.jersey-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.jersey-name {
+    font-size: 1.2em;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.jersey-price {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #d32f2f;
+}
+.jersey:hover {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	opacity: 0.5; /* 호버 시 반투명도 적용 */
+}
+
+/*-----------------------------------------------------------------*/
+#sidebarcart-button {
+     position: fixed; /* Fixed position relative to the viewport */
+    top: 50%; /* Positioned at half the height of the viewport */
+    right: 20px; /* 20 pixels from the right edge of the viewport */
+    transform: translateY(-50%); /* Center it vertically */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+#sidebarcart-button img {
+    display: block; /* Remove extra space under the image */
+    width: 50px; /* Specify the width of the image */
+    height: auto; /* Keep the aspect ratio */
+    cursor: pointer; /* Change the cursor to indicate it's clickable */
+}

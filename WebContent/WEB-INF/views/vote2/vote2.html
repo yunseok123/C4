@@ -1,0 +1,451 @@
+    
+<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>로그인 및 회원가입 페이지</title>
+	    <link rel="stylesheet" href="/css/vote.css">
+	    
+	    <style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.header {
+  background: white;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header img {
+  margin-left: 16px;
+}
+
+.sports-and-login {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.sports {
+  display: flex;
+  align-items: center;
+}
+
+.sports a {
+  margin-right: 10px;
+}
+
+.sports a:last-child {
+  margin-right: 20px;
+}
+
+.login-button {
+  background-color: transparent;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background: #3D63E9;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+}
+
+.navbar .menu, .navbar .search-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .menu {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+.navbar .menu a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-right: 35px;
+  font-size: 17px;
+}
+
+.navbar .menu a:not(:last-child) {
+  margin-right: 32px;
+}
+
+.navbar .search-container {
+  order: 2;
+  margin-left: auto;
+  position: relative;
+  background-color: white;
+  border-radius: 22px;
+  width: 350px; 
+  max-width: 400px; 
+  height: 36px; 
+  display: flex;
+  align-items: center; 
+}
+
+.navbar .search-container input[type=text] {
+  flex-grow: 1; 
+  border: none;
+  padding: 8px 0; 
+  border-radius: 22px 22px 22px 22px;
+}
+
+.navbar .search-container .search-button {
+  background: transparent; 
+  border: none; 
+  outline: none; 
+  padding: 0; 
+  position: absolute; 
+  right: 0;
+  top: 0;
+  width: 48px; 
+  height: 100%; 
+  cursor: pointer; 
+  z-index: 10;
+}
+
+.navbar .search-container .search-button img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px; 
+  height: auto;
+  border: none;
+  background: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center; 
+  gap: 8px; 
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.select_button {
+  border: none; /* 버튼 테두리 제거 */
+  background: none; /* 버튼 배경 제거 */
+  padding: 0; /* 버튼 패딩 제거 */
+  outline: none; /* 포커스 시 나타나는 외곽선 제거 */
+}
+	    
+	  /*-----------------------------   헤더 css----------------------------------	 */   
+	  
+	  
+	   
+ /*-----------------------------   vote css 시작----------------------------------	 */    
+	    
+	    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f3f3f3;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.login-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background-color: rgb(72, 108, 235);
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr {
+    margin-top: 20px;
+}
+
+.team-logos {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 150px;
+}
+
+.team-logos img {
+    width: 150px; /* 濡쒓퀬�쓽 �겕湲곕�� 利앷��떆�궡 */
+    height: auto;
+}
+
+/* �닾�몴�븯湲� 踰꾪듉 �뒪���씪 */
+.vote-button {
+    display: block;
+    width: 150px; /* 踰꾪듉�쓽 �꼫鍮꾨�� 利앷��떆�궡 */
+    height: 50px; /* 踰꾪듉�쓽 �넂�씠瑜� 利앷��떆�궡 */
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #D9D9D9; /* 踰꾪듉�쓽 諛곌꼍�깋 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* 踰꾪듉�쓽 湲�瑗� �겕湲곕�� 利앷��떆�궡 */
+    font-weight: bold;
+}
+
+/* �뙎湲� 而⑦뀒�씠�꼫 �뒪���씪 */
+.comments-container {
+    max-width: 768px; /* 而⑦뀒�씠�꼫�쓽 理쒕� �꼫鍮꾨�� 以꾩엫 */
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* �뙎湲� �옉�꽦 �뤌 �뒪���씪 */
+.comment-form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.comment-form textarea {
+    flex: 1;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.comment-form button {
+    padding: 10px 20px;
+    background-color: #3A4C8C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* �뙎湲� 紐⑸줉 �뒪���씪 */
+.comments-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-list .comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.comments-list .comment span {
+    margin: 0 10px;
+}
+
+.comment-name {
+    flex-basis: 20%;
+}
+
+.comment-content {
+    flex-grow: 2;
+    text-align: left;
+}
+
+.comment-date {
+    flex-basis: 20%;
+}
+
+/* �럹�씠吏� �꽕�씠�뀡 �뒪���씪 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}
+	    
+	    
+	    
+	    </style>
+	</head>
+	<body><div class="header">
+		<button onclick="window.location.href='${root }/main'" class="logo-button">
+    	<img src="${root }/img/Match Point.png" alt="Match Point Logo" height="30">
+</button>
+
+		<div class="sports-and-login">
+			<div class="sports">
+				</a>
+			</div>
+
+
+    </div>
+</div>
+<div>
+<ul class="navbar-navml-auto">
+   <!--  <c:choose>
+        <c:when test="${loginUserBean.userLogin == true }">
+            <li class="nav-item">
+                <span class="nav-link" style="color:black">${loginUserBean.user_nickname}님</span> 닉네임 표시
+            </li>
+            <li class="nav-item">
+               <a href="${root }/user/modify" class="nav-link" style="color:black">정보수정</a>
+                     <%--  <a href="${root }/mypage/mypagemain" class="nav-link" style="color:black">마이페이지</a> --%>
+            </li>
+            <li class="nav-item">
+                <a href="${root }/user/logout" class="nav-link" style="color:black">로그아웃</a>
+            </li>
+        </c:when>
+        
+        <c:otherwise>
+            <li class="nav-item">
+                <a href="${root }/user/Login" class="nav-link" style="color:black">로그인</a>
+            </li>
+        </c:otherwise>
+    </c:choose> -->
+</ul>
+</div>
+
+
+	<div class="navbar">
+		<div class="menu">
+			<a href="${root }/ticket/Ticketing">인기 경기</a> <a href="${root}/record/PlayerRanking">기록실</a>         
+<a href="javascript:void(0);" onclick="toggleTeamLogos(event)">TEAM</a>
+
+			<a href="${root }/product/Market">MARKET</a> <%-- <a href="${root}/vote2/vote">경기 예측</a> --%> 
+			<a href="${root}/admin/admin"> 경기 예측</a>
+			  <!-- <c:forEach var='obj' items="${topMenuList }">
+                  
+                     <a class="nav-link" href="${root }/board/main?board_info_idx=${obj.board_info_idx}">
+                        ${obj.board_info_name }
+                     </a>
+               
+               </c:forEach> -->
+		</div>
+		<div class="search-container">
+			<input type="text" placeholder="커뮤니티 검색">
+			<button type="submit" class="search-button">
+				<img src="./img/Search_icon.png" alt="검색" />
+			</button> 
+			
+		</div>
+	</div>
+
+<div id="logoDiv" class="logo hidden">
+
+
+
+  <!--   <c:forEach var="team" items="${teamBeanList}">
+        <a href="${root}/team/Team?team_id=${team.team_ID}">
+        
+            <img src="${root }/img/구단 로고/야구/${team.team_LogoURL}" height="60" alt="${team.team_Name} Logo"/>
+        </a>
+    </c:forEach> -->
+</div>
+	<!---------------------------- 헤더 --------------------------------------------->
+	  	
+	   	<!---------------------------- vote 시작 --------------------------------------------->
+	   
+	     <div class="team-logos">
+	        <img src="${root }/img/구단 로고/축구/FC안양.png" alt="Team Logo 1">
+	        <img src="${root }/img/구단 로고/축구/경남FC.png" alt="Team Logo 2">
+	    </div>
+	
+	    <button class="vote-button">투표하기</button>
+	
+	 <div class="comments-container">
+	    <div class="comment-form">
+	        <textarea placeholder="댓글을 작성해주세요."></textarea>
+	        <button type="button">검색</button>
+	    </div>
+	    <div class="comments-list">
+	        <div class="comment">
+	            <span class="comment-name">김철수</span>
+	            <span class="comment-content">정말 좋은 글입니다.</span>
+	            <span class="comment-date">2023-12-06</span>
+	        </div>
+	           <div class="comment">
+	            <span class="comment-name">김철수</span>
+	            <span class="comment-content">정말 좋은 글입니다.</span>
+	            <span class="comment-date">2023-12-06</span>
+	        </div>
+	           <div class="comment">
+	            <span class="comment-name">김철수</span>
+	            <span class="comment-content">정말 좋은 글입니다.</span>
+	            <span class="comment-date">2023-12-06</span>
+	        </div>
+	           <div class="comment">
+	            <span class="comment-name">김철수</span>
+	            <span class="comment-content">정말 좋은 글입니다.</span>
+	            <span class="comment-date">2023-12-06</span>
+	        </div>
+	        <!-- 추가 댓글 -->
+	    </div>
+	    <div class="pagination">
+	        <!-- 페이지 네이션 -->
+	        <a href="#">&lt;</a>
+	        <a href="#">1</a>
+	        <a href="#">2</a>
+	        <a href="#">&gt;</a>
+	    </div>
+	</div>
+	
+	
+	
+	
+	</body>
+	</html>

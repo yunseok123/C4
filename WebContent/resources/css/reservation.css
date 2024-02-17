@@ -1,0 +1,583 @@
+.width_size{
+	width: 60%;
+	margin: auto;
+}
+.screen_direction{
+	
+	width: 50%;
+	margin: auto ;
+	font-size: 50px;
+	background-color: white;
+	text-align: center;
+	color: #007bff;
+}
+.direction{
+	text-align: center;
+	font-size: 50px;
+	color: red;
+	font-weight: 900;
+}
+.process-steps {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 100%; /* �쟾泥� 媛�濡� �겕湲곕�� �뒛由� */
+    margin-left: 50px;
+    margin-right: 20px;
+    border: 1px solid #000; /* �쟾泥� 洹몃９�뿉 寃쎄퀎�꽑 異붽� */
+}
+
+.process-steps button {
+    flex-grow: 1;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none; /* 媛쒕퀎 踰꾪듉 寃쎄퀎�꽑 �젣嫄� */
+    outline: none;
+}
+
+/* 踰꾪듉 �궗�씠�쓽 寃쎄퀎�꽑�쓣 異붽��빀�땲�떎 */
+.process-steps button:not(:last-child) {
+    border-right: 1px solid #000;
+}
+
+/* �꽑�깮�맂 踰꾪듉 �뒪���씪 */
+.selected {
+    background-color: #5578F4;
+    color: white;
+}
+
+.process-steps button:hover:not(.selected) {
+    background-color: #e6e6e6;
+}
+
+
+/* 媛� �떒怨� 而⑦뀒�씠�꼫 �뒪���씪 */
+.step-container {
+    display: none; /* 泥섏쓬�뿉�뒗 �닲源� 泥섎━ */
+    max-width: 600px; /* 理쒕� 媛�濡� �겕湲� �꽕�젙 */
+    margin: 20px auto; /* �쐞�븘�옒 �뿬諛� �꽕�젙 */
+    text-align: center; /* 以묒븰 �젙�젹 */
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); /* 洹몃┝�옄 �슚怨� 異붽� */
+}
+
+/* �궡�슜 �뒪���씪留� */
+.step-content {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.body-container {
+    padding: 20px;
+    background: #FFF;
+    /* �븘�슂�뿉 �뵲�씪 異붽� �뒪���씪留� */
+}
+
+.step-navigation {
+    display: flex;
+    justify-content: start;
+    border: 1px solid #ccc; /* �쟾泥� �꽕鍮꾧쾶�씠�뀡 �뀒�몢由� */
+    border-radius: 5px; /* �뫁洹� 紐⑥꽌由� �슚怨� */
+    overflow: hidden; /* �옄�떇 �슂�냼�쓽 �뀒�몢由ш� 遺�紐� �뀒�몢由� 諛뽰쑝濡� �굹媛�吏� �븡�룄濡� */
+}
+
+.step {
+   flex: 1;
+    padding: 10px 20px;
+    border-right: 1px solid #ccc; /* �꺆 �궗�씠�쓽 援щ텇�꽑 */
+    background-color: #f9f9f9; /* 湲곕낯 諛곌꼍�깋 */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* 遺��뱶�윭�슫 諛곌꼍�깋 蹂�寃� �슚怨� */
+}
+
+.step:last-child {
+    border-right: none; /* 留덉�留� �꺆�쓽 援щ텇�꽑 �젣嫄� */
+}
+
+.step.active {
+    background-color: #3D63E9; /* �솢�꽦 �꺆 諛곌꼍�깋 */
+    color: white; /* �솢�꽦 �꺆 湲��옄�깋 */
+    border: none; /* �솢�꽦 �꺆 �뀒�몢由� �젣嫄� */
+}
+
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* �븘�슂�븳 踰꾪듉 �뒪���씪留� */
+}
+
+.booking-container {
+    display: flex;
+    flex-direction: row; /* 媛�濡쒕줈 �슂�냼�뱾�쓣 �굹�뿴 */
+    align-items: flex-start; /* �슂�냼�뱾�쓣 �긽�떒�뿉 留욎땄 */
+    padding: 20px;
+    background: #FFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 1200px; /* 而⑦뀒�씠�꼫�쓽 理쒕� �꼫鍮꾨�� �꽕�젙 */
+    margin: 0 auto; /* �럹�씠吏� 以묒븰�뿉 諛곗튂 */
+}
+
+.stadium-diagram {
+    flex: 1; /* 媛�蹂� �꼫鍮꾨�� 媛�吏��룄濡� �꽕�젙 */
+    height: auto; /* �씠誘몄��쓽 �넂�씠瑜� �옄�룞�쑝濡� �꽕�젙 */
+    max-width: 600px; /* �씠誘몄��쓽 理쒕� �꼫鍮꾨�� �꽕�젙 */
+}
+
+.seat-category {
+	display:flex;
+	 
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.seat-category-button{
+	width: 80%;
+    height: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	background-color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.price-info{
+	font-size: 10px;
+}
+.category-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left; /* 移댄뀒怨좊━ �젣紐⑹쓣 �쇊履� �젙�젹 */
+}
+/* 
+.seats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-start; 醫뚯꽍 踰꾪듉�뱾�쓣 �쇊履쎌쑝濡� �젙�젹
+}
+
+.seat {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+}
+ */
+.seat:hover {
+    background-color: #e8e8e8;
+}
+
+.seat.selected {
+    border-color: #f00;
+    color: #fff;
+    background-color: #f00;
+}
+
+
+.selected-seats-info {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px; /* �쐞 �슂�냼���쓽 媛꾧꺽 */
+}
+
+.selected-seats-info .label {
+    font-weight: bold;
+}
+
+.selected-seats-info .selected-seats {
+    margin: 10px 0;
+}
+
+.booking-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.seat-selection-button, .reset-selection-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.seat-selection-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.reset-selection-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.seat-selection-button:hover {
+    background-color: #45a049;
+}
+
+.reset-selection-button:hover {
+    background-color: #d32f2f;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.step-navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.booking-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* 而⑦뀒�씠�꼫�쓽 理쒕� �꼫鍮꾨�� �꽕�젙�빀�땲�떎. */
+}
+
+.stadium-diagram {
+    flex: 1;
+    margin-right: 20px; /* �떎瑜� �슂�냼���쓽 媛꾧꺽�쓣 �꽕�젙�빀�땲�떎. */
+}
+
+.stadium-diagram img {
+    max-width: 100%; /* �씠誘몄��쓽 理쒕� �꼫鍮꾨�� �꽕�젙�빀�땲�떎. */
+    height: auto; /* �씠誘몄��쓽 �넂�씠瑜� �옄�룞�쑝濡� 議곗젅�빀�땲�떎. */
+}
+
+.seat-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.selected-seats-info,
+.booking-actions {
+    margin-top: 10px;
+}
+
+/* 醫뚯꽍 踰꾪듉 �뒪���씪 */
+.seat {
+    /* 醫뚯꽍 踰꾪듉�쓽 �뒪���씪�쓣 �젙�쓽�빀�땲�떎. */
+}
+
+
+/* 媛� �떒怨� 而⑦뀒�씠�꼫 �뒪���씪 */
+#step2-container {
+    /* 湲곗〈 �뒪���씪 �쑀吏� */
+    display: none;
+    max-width: 600px;
+    margin-top: 100px;
+    
+    text-align: center;
+    /* 異붽� �뒪���씪 */
+    padding: 20px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+#step2-container h3 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#step2-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+#step2-container th, #step2-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#step2-container td {
+    text-align: center;
+}
+
+#step2-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#step2-container tr:hover {
+    background-color: #e6e6e6;
+}
+
+#step2-container th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #f5f5f5;
+    color: black;
+}
+
+#step2-container input[type="radio"] {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* �궗�슜�옄 �젙蹂� �엯�젰 �뤌 �뒪���씪 */
+.user-info-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info-form .form-group {
+    margin-bottom: 15px;
+}
+
+.user-info-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.user-info-form .form-group input[type="text"],
+.user-info-form .form-group input[type="tel"],
+.user-info-form .form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* so that padding doesn't affect the width */
+}
+
+.user-info-form .form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+}
+
+.user-info-form .form-actions {
+    text-align: right;
+}
+
+.user-info-form .submit-button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.user-info-form .submit-button:hover {
+    background-color: #4cae4c;
+}
+
+/* 異붽��맂 臾멸뎄 �뒪���씪 */
+.info-text {
+    color: red;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------------ */
+
+
+.Divide_area {
+   display: grid; 
+
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+
+   grid-template-areas: 
+    'label0 label0 label0 label1'
+    'label0 label0 label0 label2'
+    'label0 label0 label0 label2';
+
+   gap: 10px;
+   height: 600px;
+   width: 100%;
+
+}
+
+#area_1 {
+   background-color: rgb(244,244,244);
+   grid-area: label0;
+   border: 1px solid;
+
+}
+#area_2 {
+
+   grid-area: label1;
+}
+
+#area_2 img {
+  /* 이미지 스타일 */
+  width: 100%; /* 이미지를 부모 요소의 너비에 맞게 조정 */
+  height: auto; /* 이미지의 높이를 가로 비율에 맞게 자동 조정 */
+  z-index: 2;
+}
+
+#area_3 {
+
+ 
+   grid-area: label2;
+   overflow:auto; 
+   border: 1px solid;
+
+}
+
+
+
+
+.seats {
+   width: 80%;
+   display: grid;
+   grid-template-columns: repeat(10, 1fr); 
+   justify-content: center; 
+   align-items: center; 
+   margin: auto;
+
+}
+
+#area_1 button{
+   background-color: rgb(115, 241, 64);;
+
+}
+
+#area_1 button.seat:focus {
+   background-color: blue;
+   border: 1px solid red; 
+}
+
+#area_1 .seat-checkbox{
+   -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #444451;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.seat-label-container {
+   width: 40px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-right: 5px;
+}
+
+
+
+#area_1 .seat-checkbox:checked {
+    background-color: #0081cb ;
+}
+
+#area_1 .seat-checkbox:disabled {
+    background-color: #fff !important;
+    cursor: not-allowed;
+}
+
+.seat-checkbox {
+    display: none; /* 초기에는 체크박스 숨김 */
+}
+
+.seat-checkbox + label {
+    display: none; /* 체크박스와 연결된 라벨도 숨김 */
+}
+
+
+.seat_color{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin:0 5px 0 5px;
+}
+
+.area_select p {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 2px;
+}
+
+.area_select .seat-category:nth-child(2) .seat_color {
+    background-color: skyblue; /* 밝은 레드 */
+}
+
+.area_select .seat-category:nth-child(3) .seat_color {
+    background-color: #46F0F0; /* 밝은 그린 */
+}
+
+.area_select .seat-category:nth-child(4) .seat_color {
+    background-color: #FFE119; /* 밝은 옐로우 */
+}
+
+.area_select .seat-category:nth-child(5) .seat_color {
+    background-color: #4363D8; /* 밝은 블루 */
+}
+
+.area_select .seat-category:nth-child(6) .seat_color {
+    background-color: #F58231; /* 밝은 오렌지 */
+}
+
+.area_select .seat-category:nth-child(7) .seat_color {
+    background-color: #911EB4; /* 밝은 퍼플 */
+}
+
+.area_select .seat-category:nth-child(8) .seat_color {
+    background-color: #5B0C1D; /* 다크 버건디 */
+}
+
+.area_select .seat-category:nth-child(9) .seat_color {
+    background-color: #800020; /* 버건디 */
+}
+
+.area_select .seat-category:nth-child(10) .seat_color {
+    background-color: #BCF60C; /* 라임 그린 */
+}
+
+.area_select .seat-category:nth-child(11) .seat_color {
+    background-color: #FABEBE; /* 연한 핑크 */
+}
+
+.area_select .seat-category:nth-child(12) .seat_color {
+    background-color: #008080; /* 틸 */
+}
+
+.area_select .seat-category:nth-child(13) .seat_color {
+    background-color: #E6BEFF; /* 연한 퍼플 */
+}
+
+.area_select .seat-category:nth-child(14) .seat_color {
+    background-color: #9A6324; /* 브라운 */
+}
+
+.area_select .seat-category:nth-child(15) .seat_color {
+    background-color: #F03AD3; /* 연한 옐로우 */
+}
+

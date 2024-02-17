@@ -1,0 +1,189 @@
+.body{
+   width:1920px;
+}
+
+.selects {
+   font:20px;
+    display: flex;
+   margin-left: 150px;
+   font-weight: bold;
+}
+
+.select {
+
+    padding: 10px ;
+    text-decoration: none;
+    color: #000; 
+    border-bottom: none; /* 탭 아래쪽 테두리를 제거하여 선택된 탭이 상단 테두리와 맞물리게 함 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.select:hover {
+    background-color: #f7f7f7;
+}
+
+
+a { /* 밑줄 없애기 */
+  text-decoration-line: none;
+}
+.active {
+  
+    color: #3D63E9;
+
+}
+.tabs {
+   
+    display: flex;
+    gap :20px;
+    justify-content: center;
+    background-color: #f0f0f0; /* 탭 바탕색 변경 (선택 사항) */
+    border-radius: 5px; /* 탭 모서리를 둥글게 (선택 사항) */
+    margin-bottom: 15px;
+}
+
+.tab-batting, .tab-pitching {
+    flex: 1; /* 탭이 동일한 너비를 가지도록 함 */
+    text-align: center; /* 탭 텍스트 가운데 정렬 */
+    padding: 10px 0; /* 탭 안쪽 여백 설정 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-batting:hover, .tab-pitching:hover {
+    background-color: blue; /* 호버 효과 배경색 변경 (선택 사항) */
+}
+.active-tab {
+        background-color: #eee;
+    }
+.tab-batting.active, .tab-pitching.active {
+    background-color: #3D63E9; /* 활성화된 탭의 배경색 변경 */
+    font-weight: bold; /* 활성화된 탭 텍스트 굵게 표시 (선택 사항) */
+    color:white;
+}
+
+/*여기부터 컨테이너 css쪽*/
+.table-container {
+  display: grid;
+  grid-template-columns: 50% 50%; /* 두 개의 열을 50%로 설정 */
+  justify-content: center; /* 아이템들을 컨테이너 중앙에 정렬 */
+  align-items: flex-start;
+  gap: 20px;
+  /* padding: 20px; */
+  /* margin-left: 150px; */ 
+}
+
+
+ .top-players {
+  width: 100%; 
+  min-width: 400px; 
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-players caption {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.top-players th, .top-players td {
+  padding: 10px 10px;
+  border: 1px solid #ddd;
+}
+
+
+
+
+.top-players tr:not(.rank-subject):hover {
+    background-color: #f1f1f1; /* 호버 효과 적용 */
+}
+.rank{
+   font-weight: bold;
+   font-size: 17px;
+}
+
+.rank-subject{
+   background-color: #3D63E9;
+   color: white;
+}
+
+.rank-subject th:nth-child(1) {
+    width: 60px;
+}
+
+.rank-subject th:nth-child(2) {
+    width: 220px;
+}
+
+.rank-subject th:nth-child(3) {
+    width: 250px;
+}
+
+.rank-subject th:nth-child(4) {
+    width: 80px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .TableContainer {
+    width: 100%; /* 모바일 뷰에서 테이블 너비를 100%로 설정 */
+  }
+}
+
+.top-players caption {
+    position: relative;
+    text-align: center;
+}
+
+.caption-button {
+    position: absolute; /* 절대 위치 설정 */
+    right: 0; /* 오른쪽에 위치 */
+    top: 50%; /* 위에서 50% 위치 */
+    transform: translateY(-50%); /* 세로 중앙 정렬 */
+    text-decoration: none;
+    color: white;
+    background-color: #3D63E9;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.caption-button:hover {
+    background-color: #2C4BA6;
+    color: white;
+}
+
+
+/*맨아래 버튼*/
+
+.full-records-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.full-records-button {
+   margin-bottom:50px;
+   width:30%;
+   height:auto;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* 버튼의 배경 색상 */
+    color: white; /* 글자 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+    border-radius: 5px; /* 버튼의 모서리를 둥글게 */
+    font-size: 16px; /* 글자 크기 */
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+    transition: background-color 0.3s; /* 호버 효과 */
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.full-records-button:hover {
+    background-color: #0056b3; /* 버튼 호버 시 배경 색상 변경 */
+}

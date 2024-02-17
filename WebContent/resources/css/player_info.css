@@ -1,0 +1,189 @@
+/* ê¸°ë³¸  Š¤   ¼  „¤  • */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*  „  ˆ˜   •ë³  ì»¨í…Œ ´ „ˆ */
+.player-info-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+}
+
+/*  „  ˆ˜  ‚¬×Ù  */
+.player-photo img {
+    width: 100%;
+    display: block; /*  ´ë¯¸ì ê°   ¬ •¨ œ div  ¬ê¸°ì— ×ºì¶¤
+/
+border-radius: 4px; /  ‚¬×Ù„ì˜ Òï¨ì„œë¦¬ë    ‘¥ê¸ ê²  */
+}
+
+/*  „  ˆ˜ ê¸°ë³¸   •ë³  ë°   ƒ „¸   •ë³  */
+.player-details {
+display: flex;
+flex-direction: column;
+}
+
+.player-details h1 {
+font-size: 1.8em;
+margin-bottom: 10px;
+}
+
+.player-details p {
+line-height: 1.6;
+margin-bottom: 20px;
+}
+
+/*  „  ˆ˜  „±   ë°   ´    ‚´ —­  ‘œ ‹œ */
+.player-stats,
+.player-history {
+margin-bottom: 20px;
+}
+
+.player-stats h2,
+.player-history h2 {
+font-size: 1.5em;
+margin-bottom: 10px;
+}
+
+/*  …Œ ´ë¸   Š¤   ¼ */
+.player-stats table,
+.player-history table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.player-stats th,
+.player-stats td,
+.player-history th,
+.player-history td {
+text-align: left;
+padding: 8px;
+border-bottom: 1px solid #ddd;
+}
+
+.player-stats th,
+.player-history th {
+background-color: #f7f7f7;
+}
+
+/* ê¸°ì¡´  Š¤   ¼  „¤  •  œ ×Ù  */
+
+/*  „  ˆ˜   •ë³   „¹ …˜  Š¤   ¼ */
+.player-info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ê°   ”„  ˆ „ ˜  Š¤   ¼ */
+/* ê¸°ë³¸  Š¤   ¼  „¤  •  œ ×Ù  */
+
+/*  „  ˆ˜   •ë³  ì»¨í…Œ ´ „ˆ */
+.player-info-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff;
+    display: flex; /* ë³ ê² : ê·¸ë¦¬ “œ    ‹   ”Œ  ‰ Š¤   ˆ ´ •„ ›ƒ  ‚¬ š© */
+    flex-direction: column; /*  š” †Œ “¤ „  „¸ë¡œë¡œ ë°°ì¹˜ */
+}
+
+/*  „  ˆ˜  ‚¬×Ù  ë°  ê¸°ë³¸   •ë³   Š¤   ¼ */
+.player-photo img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
+.player-details {
+    display: flex;
+    flex-direction: column;
+}
+
+/*  ”„  ˆ „  Š¤   ¼ */
+.player-info-frame {
+    width: 40%;
+    margin: 20px 0; /*  ƒ •˜  —¬ë°  */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+      display: flex; /*  ”Œ  ‰ Š¤   ˆ ´ •„ ›ƒ  ‚¬ š© */
+    align-items: stretch; /*   ‹  š” †Œë¥   †’ ´ — ×ºê²Œ  Š˜ë¦  */
+    justify-content: space-between; /*  š” †Œ  ‚¬ ´ ˜ ê³µê°„ „ ê· ë“± •˜ê²  ë¶„ë°° */
+}
+
+/*  ‚´ š©  Š¤   ¼ */
+.player-info-content {
+    width: 40%; /*   „Òú   „ˆë¹   ‚¬ š© */
+   margin-top:20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.player-info-content1 {
+    width: 40%; /*   „Òú   „ˆë¹   ‚¬ š© */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+}
+
+.player-info-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.player-info-content li {
+    margin-bottom: 5px;
+}
+
+
+.player-info-content1 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.player-info-content1 li {
+    margin-bottom: 5px;
+}
+.player-photo {
+    margin-left: auto; /* ì»¨í…Œ ´ „ˆë¥   ˜¤ë¥¸ìª½ œ¼ë¡  ë°  –´ ƒ„ */
+    align-self: center; /*  „¸ë¡  ë°©í–¥ ê°  š´ °   •  ¬ */
+    height: 100%; /* ë¶ Òï  ì»¨í…Œ ´ „ˆ  †’ ´ — ×ºì¶¤ */
+}
+
+/*  „  ˆ˜  ‚¬×Ù   Š¤   ¼ */
+.player-photo img {
+    height: auto; /*  „¸ë¡   ¬ê¸°ë     ™ œ¼ë¡  ì¡°ì ˆ */
+    max-height: 100%; /* ×âœë   †’ ´ë¥  ë¶ Òï  ì»¨í…Œ ´ „ˆ ˜  †’ ´ë¡    œ •œ */
+    width: auto; /* ê° ë¡   ¬ê¸°ë     ™ œ¼ë¡  ì¡°ì ˆ */
+    border-radius: 4px; /* Òï¨ì„œë¦   ‘¥ê¸ ê²  */
+}
+
+/* ë²„íŠ¼ ë°  HR „  ì»¨í…Œ ´ „ˆ  Š¤   ¼ */
+.player-info-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin-left: 20px; /* Òú  ë²ˆì§¸  ”„  ˆ „ê³¼ì˜ ê°„ê²© */
+}
+
+.player-info-buttons button {
+    background-color: #4CAF50; /* ë²„íŠ¼ ë°°ê²½ ƒ‰ */
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 0; /* ë²„íŠ¼ ê°   —¬ë°  */
+    border: none;
+    border-radius: 4px;
+}

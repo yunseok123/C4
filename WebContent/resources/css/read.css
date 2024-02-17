@@ -1,0 +1,140 @@
+.hidden {
+    display: none;
+}
+
+.custom-img-size {
+    width: 60px;
+    height: 60px;
+}
+
+/* 기본 설정 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* 컨테이너 설정 */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 게시글 제목, 내용, 댓글 스타일 */
+h4 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group > label {
+    display: block;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.form-group > input, .form-group > textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.form-group > input[disabled], .form-group > textarea[disabled] {
+    background-color: #e9ecef;
+}
+
+/* 댓글 입력 폼 스타일 */
+.reply-form {
+    margin-top: 20px;
+}
+
+.reply-form h4 {
+    margin-bottom: 10px;
+}
+
+.reply-form textarea {
+    width: 100%;
+    padding: 15px; /* 패딩 증가로 내부 여백 확보 */
+    border: 1px solid #ddd; /* 경계선 스타일 */
+    border-radius: 4px; /* 모서리 둥글게 */
+    resize: vertical; /* 세로 방향으로만 크기 조절 가능 */
+    height: 150px; /* 입력 필드 높이 증가 */
+    box-sizing: border-box; /* 패딩과 테두리를 너비와 높이에 포함 */
+    margin-bottom: 10px; /* 버튼과의 간격 */
+}
+
+.reply-form button {
+    width: 100%; /* 버튼 너비를 textarea와 동일하게 설정 */
+    padding: 10px 0; /* 버튼의 상하 패딩 증가 */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.reply-form button:hover {
+    background-color: #0056b3;
+}
+
+/* 댓글 섹션 스타일 */
+.reply-section .card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-text {
+    margin-top: 10px;
+}
+
+/* 링크 버튼 스타일 */
+a.btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background-color: #007bff;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+a.btn:hover {
+    background-color: #0056b3;
+}
+
+a.btn-info {
+    background-color: #17a2b8;
+}
+
+a.btn-danger {
+    background-color: #dc3545;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+}
+

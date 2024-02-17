@@ -1,0 +1,145 @@
+
+.header {
+  background: white;
+  color: white;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header img {
+  margin-left: 16px;
+}
+
+.sports-and-login {
+  display: flex;
+  align-items: center;
+  margin-left: 70%;
+}
+
+
+.logo-button{
+	cursor: pointer;
+}
+
+.login-button {
+  background-color: transparent;
+  color: black;
+
+  text-decoration: none;
+  font-size: 24px;
+  border: none;
+  
+}
+
+.login-button:hover {
+  text-decoration: underline;
+    
+}
+.header_navbar {
+    display: flex;
+    background-color: #007aff;
+    height: 80px; /* 중복 제거 및 최종 값 설정 */
+    font-size: max(30px, min(1.0vw, 15px)); /* 예시 수정: 더 합리적인 최소/최대값 설정 */
+}
+
+nav {
+    display: flex;
+}
+
+.top-nav {
+    width: 60%;
+    flex-wrap: nowrap;
+    margin: auto;
+    display: flex;
+}
+.top-nav div{
+	width: 20%;
+	text-align: center;
+}
+.header_navbar a {
+    height: 80px;
+    line-height: 75px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: max(30px, min(1.0vw, 15px)); /* 예시 수정: 더 합리적인 최소/최대값 설정 */
+    width: 15%; /* 각 링크의 너비를 균등하게 설정 */
+}
+
+
+@media screen and (max-width: 768px) {
+    .top-nav {
+        width: 100%; /* 화면이 좁아질 때 전체 너비를 사용 */
+        flex-direction: column; /* 항목을 세로로 정렬 */
+    }
+    .header_navbar a {
+        width: 100%; /* 모든 링크가 너비 전체를 차지하도록 설정 */
+    }
+}
+
+
+.header_navbar a {
+    width: auto;
+    margin: 0 10px 0 10px; 
+}
+.top-nav div:nth-child(1):hover { background-color: #1abc9c; }
+.top-nav div:nth-child(2):hover { background-color: #e74c3c; }
+.top-nav div:nth-child(3):hover { background-color: #3498db; }
+.top-nav div:nth-child(4):hover { background-color: #9b59b6; }
+.top-nav div:nth-child(5):hover { background-color: #e67e22; }
+.top-nav div:nth-child(6):hover { background-color: #2ecc71; }
+
+.search-container {
+  display: flex;
+  align-items: center; /* 자식 요소들을 수직 가운데 정렬 */
+  flex-wrap: nowrap;
+}
+.search-container input{
+    width: 300px;
+    height: 60%;
+    border-radius: 10px;
+}
+.search-container button img {
+   width: 30px;
+     height: 30px;
+    object-fit: fill;
+}
+
+
+ .logo {
+  display: flex;
+  justify-content: center; 
+  gap: 40px; 
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+
+.select_button {
+  border: none; 
+  background: none; 
+  padding: 0;
+  outline: none;
+  margin-right: 20px;
+  cursor: pointer;
+} 
+.nav-item{
+   margin-left: 15px;
+}
+.navbar-navml-auto {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* 메뉴 항목들을 오른쪽 정렬 */
+  flex-grow: 1; /* 가능한 모든 공간을 차지하도록 설정 */
+  margin-left: auto; /* 왼쪽에 자동으로 마진을 적용하여 오른쪽 정렬 */
+}
+
+
+
+ 
